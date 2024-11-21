@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Organizational Chart</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <style>
+    /* Global Reset and Styling */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #800000; /* Maroon background */
+      color: #f2f2f2; /* Light text color for contrast */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+      padding: 20px;
+    }
+
+    /* Header */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      background: #5c1f1f; /* Darker maroon */
+      padding: 20px;
+      color: #fff;
+      border-radius: 8px;
+      margin-bottom: 40px;
+    }
+
+    .logo-container {
+      display: flex;
+      align-items: center;
+    }
+
+    .school-logo {
+      width: 60px;
+      margin-right: 10px;
+      border-radius: 50px;
+    }
+
+    .school-name {
+      font-size: 1.8em;
+      font-weight: bold;
+      color: yellow;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    nav ul li a {
+      color: yellow;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      color: #FFD700; /* Golden color for hover effect */
+    }
+
+    /* Main Section */
+    main {
+      text-align: center;
+      width: 100%;
+    }
+
+    h1 {
+      font-size: 2.5em;
+      color: #fff; /* White text for the heading */
+      margin-bottom: 40px;
+    }
+
+    /* Organizational Chart Container */
+    .org-container {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      align-items: center;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    /* Roles and Boxes */
+    .org-role {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    .role-box {
+      background-color: #d4a5a5; /* Light maroon for the boxes */
+      padding: 20px;
+      width: 220px;
+      height: 180px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      border-radius: 8px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .role-box h3, .role-box h4 {
+      color: #5c1f1f; /* Darker maroon for role titles */
+      font-size: 1.2em;
+      margin-bottom: 10px;
+    }
+
+    .role-box p {
+      font-size: 1em;
+      color: yellow; /* Dark text for readability */
+    }
+
+    .role-box:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+    }
+
+    /* Descriptive Text */
+    .description {
+      text-align: center;
+      font-size: 1.2em;
+      color: #FFD700; /* Golden text */
+      margin: 20px 0;
+      max-width: 800px;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      nav ul {
+        flex-direction: column;
+      }
+
+      .org-role {
+        flex-direction: column;
+        gap: 20px;
+      }
+
+      .role-box {
+        width: 180px;
+        height: 150px;
+        padding: 20px;
+      }
+
+      h1 {
+        font-size: 2em;
+      }
+
+      .description {
+        font-size: 1em;
+      }
+    }
+  </style>
+  <header>
+    <div class="logo-container">
+      <img src="schoollogo.jpg" alt="School Logo" class="school-logo">
+      <span class="school-name">Stand Alone</span>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Menu</a></li>
+        <li><a href="activities.html">Activities/Gallery</a></li>
+        <li><a href="schedule.html">Schedule of Events</a></li>
+        <li><a href="#">Org Chart</a></li>
+        <li><a href="contacts.html">Contacts</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Organizational Chart</h1>
+    <section class="org-container">
+      <!-- Principal -->
+      <div class="org-role">
+        <div class="role-box">
+          <h3>Principal</h3>
+          <p>Jennifer R. Mariano</p>
+        </div>
+      </div>
+
+      <!-- Descriptive Text -->
+      <h2>  
+      <p class="description">
+        Senior High School Academic Group      </p>
+        </h2>
+
+      <!-- Four Roles -->
+      <div class="org-role">
+        <div class="role-box">
+          <h4>
+          <p>Cynthia M. Guanzon</p>
+          </h4>
+        </div>
+        <div class="role-box">
+          <h4>
+          <p>Nathaniel A. Abad</p>
+          </h4>
+        </div>
+        <div class="role-box">
+          <h4>
+          <p>Kathleen C. Abaja</p>
+          </h4>
+        </div>
+        <div class="role-box">
+          <h4>
+          <p>Juliet I. Sato</p>
+          </h4>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

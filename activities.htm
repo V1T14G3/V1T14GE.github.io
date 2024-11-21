@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Activities/Gallery</title>
+	<style>
+		/* Reset and global styling */
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+			font-family: Arial, sans-serif;
+		}
+		body {
+			font-family: Arial, sans-serif;
+			background-color: #f4f4f4;
+			color: #333;
+			padding: 20px;
+		}
+		
+		/* Header and navigation styling */
+		header {
+			margin-bottom: 20px;
+		}
+		header nav ul {
+			display: flex;
+			justify-content: center;
+			list-style: none;
+			background-color: #333;
+			padding: 10px;
+			border-radius: 8px;
+		}
+		header nav ul li {
+			margin: 0 10px;
+		}
+		header nav ul li a {
+			color: yellow;
+			text-decoration: none;
+			padding: 8px 15px;
+			border-radius: 5px;
+			transition: background-color 0.3s;
+		}
+		header nav ul li a:hover {
+			background-color: #555;
+		}
+		
+		/* Border Image styling */
+		.border-image {
+			border: 8px solid transparent;
+			border-image: linear-gradient(to bottom, red, yellow);
+			border-image-slice: 1;
+			padding: 20px;
+			background-color: #fff;
+			border-radius: 8px;
+			box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+			margin-bottom: 20px;
+		}
+		
+		/* Table styling */
+		.table {
+			border-collapse: collapse;
+			width: 100%;
+			background-color: #fff;
+			border-radius: 8px;
+			overflow: hidden;
+			box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+		}
+		.table th {
+			background-color: #333;
+			color: yellow;
+			padding: 12px;
+			text-align: left;
+		}
+		.table td {
+			border: 1px solid #ddd;
+			padding: 12px;
+			text-align: left;
+			background-color: #f9f9f9;
+		}
+		.table tr:nth-child(even) {
+			background-color: #f2f2f2;
+		}
+		.table tr:hover {
+			background-color: #ddd;
+		}
+		
+		/* Gallery section styling */
+		.gallery {
+			display: flex;
+			flex-wrap: wrap;
+			gap: 10px;
+			justify-content: center;
+			margin-top: 20px;
+		}
+		.gallery img {
+			width: 200px;
+			height: 150px;
+			object-fit: cover;
+			border-radius: 8px;
+			box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+			transition: transform 0.3s ease;
+		}
+		.gallery img:hover {
+			transform: scale(1.05);
+		}
+		
+		.gallery h2 {
+			width: 100%;
+			text-align: center;
+			color: #333;
+			margin-bottom: 10px;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<nav>
+			<ul>
+				<li><a href="index.html">HOME</a></li>
+				<li><a href="#">ACTIVITIES/GALLERY</a></li>
+				<li><a href="schedule.html">SCHEDULE EVENTS</a></li>
+				<li><a href="org chart.html">SCHOOL ORGANIZATIONAL CHART</a></li>
+				<li><a href="contact.html">CONTACTS</a></li>
+			</ul>
+		</nav>
+	</header>
+	
+	<div class="border-image">
+		<h2 style="text-align: center; color: #333; margin-bottom: 20px;">Previous Activities</h2>
+		<table class="table">
+			<tr>
+				<th>Activity</th>
+				<th>Date</th>
+			</tr>
+			<tr>
+				<td>Taekwondo Championship</td>
+				<td>2024-10-12</td>
+			</tr>
+			<tr>
+				<td>Huwang Guro</td>
+				<td>2024-09-26</td>
+			</tr>
+			<tr>
+				<td>ALS Orientation</td>
+				<td>2024-03-03</td>
+			</tr>
+			<tr>
+				<td>SASHSians</td>
+				<td>2024-07-29</td>
+			</tr>
+			<!-- Additional rows can be added as needed -->
+		</table>
+	</div>
+	
+	<div class="gallery">
+		<h2>Event Gallery</h2>
+		<img src="Event1.jpg" alt="Event 1">
+		<img src="Event2.jpg" alt="Event 2">
+		<img src="Event3.jpg" alt="Event 3">
+		<img src="Event3.jpg" alt="Event 4">
+		<img src="Event5.jpg" alt="Event 5">
+		<img src="Event6.jpg" alt="Event 6">
+		<!-- Additional images can be added here -->
+	</div>
+</body>
+</html>
